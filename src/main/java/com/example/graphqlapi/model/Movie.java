@@ -17,5 +17,5 @@ public class Movie extends CommonProperties {
     private int releaseYear;
     private String discFormat;
     private String bestSoundFormat;
-    private String utlraHdFormat;
+    private String ultraHdFormat;
 }

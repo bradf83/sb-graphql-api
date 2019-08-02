@@ -1,0 +1,13 @@
+type Query {
+    movies: [Movie!]
+}
+
+type Movie {
+    id: ID
+    name: String
+    description: String
+    version: Int
+    customDescription: String
+    stringList: [String]
+    createdAt: String
+}
