@@ -13,6 +13,13 @@ import java.util.List;
 public class Query implements GraphQLQueryResolver {
     private final MovieRepository movieRepository;
 
+    /**
+     * The following is the body required to call this mutation in Postman
+     *
+     * {"query": "{ movies { id name description customDescription stringList createdAt} }"}
+     *
+     */
+
     public List<Movie> movies(){
         return this.movieRepository.findAllBy();
     }

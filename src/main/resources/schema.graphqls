@@ -1,6 +1,10 @@
+# Notes: If I have two queries below, I can call them both in one server call.
+
 type Query {
     movies: [Movie!]
 }
+
+# StringList and customDescription are custom fields that are defined in MovieResolver.
 
 type Movie {
     id: ID
@@ -11,3 +15,10 @@ type Movie {
     stringList: [String]
     createdAt: String
 }
+
+type Mutation {
+    writeMovie(name: String!, description: String, releaseYear: Int!, discFormat: String!, bestSoundFormat: String!, ultraHdFormat: String) : Movie!
+}
+
+# Explore using 'input'
+
